@@ -3,10 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#4f2446">
-  <meta name="description" content="Jasvir for Ward 2 — practical neighbourhood leadership for safer streets, better roads, responsible spending, stronger parks, and smarter growth in Georgetown.">
-  <title>Jasvir for Ward 2 | Georgetown</title>
+  <meta name="theme-color" content="#741B47">
+  <meta name="description" content="Jasvir for Ward 2 — practical neighbourhood leadership for safer streets, better roads, responsible spending, stronger parks, and smarter growth in Halton Hills.">
+  <title>Jasvir for Ward 2 | Halton Hills</title>
   <link rel="stylesheet" href="assets/styles.css">
+<style>
+/* v10: center hero name and practical-plan copy */
+.hero-name-standout,
+.hero-name-below-photo {
+  text-align: center !important;
+  width: 100% !important;
+}
+.hero-name-standout span,
+.hero-name-below-photo span {
+  text-align: center !important;
+}
+
+/* Center the practical plan paragraph in the hero */
+.hero-copy .hero-lede,
+.hero-copy .lede,
+.hero-copy > p:not(.eyebrow),
+.hero-content .hero-lede,
+.hero-content .lede {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 760px;
+}
+
+@media (max-width: 768px) {
+  .hero-copy .hero-lede,
+  .hero-copy .lede,
+  .hero-copy > p:not(.eyebrow),
+  .hero-content .hero-lede,
+  .hero-content .lede {
+    max-width: 34rem;
+  }
+}
+
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -14,22 +49,20 @@
   <header class="site-header" data-header>
     <div class="nav-shell">
       <a class="brand" href="#top" aria-label="Jasvir for Ward 2 home">
-        <span class="brand-bloom" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="brand-copy"><strong>JASVIR</strong><small>WARD 2 · GEORGETOWN</small></span>
+        <span class="brand-mark">J</span>
+        <span class="brand-copy"><strong>ELECT JASVIR</strong><small>WARD 2 · HALTON HILLS</small></span>
       </a>
-
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
         <span>Menu</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
-
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#why">Why Jasvir</a>
+        <a href="#why">Meet Jasvir</a>
         <a href="#priorities">Priorities</a>
         <a href="#vision">Mission & Vision</a>
         <a href="#ward-map">Ward Map</a>
         <a href="#volunteer">Volunteer</a>
-        <a href="#connect">Connect</a>
+        <a href="#connect">Contact</a>
         <a class="nav-cta" href="tel:+16475299917">Call Jasvir</a>
       </nav>
     </div>
@@ -37,229 +70,160 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-orb orb-one" aria-hidden="true"></div>
-      <div class="hero-orb orb-two" aria-hidden="true"></div>
-      <div class="hero-grid">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="kicker">JASVIR FOR CITY COUNCILLOR · WARD 2 · GEORGETOWN</p>
-          <h1>Protect what we love. <em>Fix what we use every day.</em></h1>
-          <p class="hero-lead">A practical plan for smoother streets, safer neighbourhoods, responsible taxes, better parks and growth that keeps Georgetown feeling like legacy.</p>
+          <p class="eyebrow">JASVIR FOR CITY COUNCILLOR · WARD 2 · HALTON HILLS</p>
+          <h1>Protect what we love.<br><span>Improve what we use every day.</span></h1>
+          <p class="hero-lead">A practical plan for smoother streets, safer neighbourhoods, responsible taxes, better parks and thoughtful growth that protects Halton Hills’ character.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#priorities">See the six priorities</a>
-            <a class="button button-ghost" href="mailto:info@electjasvir.ca?subject=Ward%202%20Community%20Issue">Share a local concern</a>
+            <a class="button button-primary" href="#priorities">Explore the priorities</a>
+            <a class="button button-secondary" href="mailto:info@electjasvir.ca?subject=Ward%202%20Community%20Issue">Share a local concern</a>
           </div>
           <div class="hero-contact" aria-label="Campaign contact information">
             <a href="tel:+16475299917"><span>Call or text</span><strong>(647) 529-9917</strong></a>
             <a href="mailto:info@electjasvir.ca"><span>Email</span><strong>info@electjasvir.ca</strong></a>
           </div>
         </div>
-
-        <div class="mobile-hero-top" aria-hidden="true">
-          <p class="kicker">JASVIR FOR CITY COUNCILLOR · WARD 2 · GEORGETOWN</p>
-          <h1>Protect what we love. <em>Fix what we use every day.</em></h1>
-        </div>
-
-        <div class="hero-visual" aria-label="Campaign photo">
-          <div class="hero-photo-wrap">
-            <!-- Temporary image from the Ward 4 source site. Replace this file later without changing the layout. -->
+        <div class="hero-visual">
+          <div class="hero-photo">
             <img src="assets/images/1.jpg" alt="Temporary campaign photo placeholder">
-            <!-- <span class="photo-ribbon">Ward 2 deserves visible results.</span> -->
           </div>
-          <!-- <div class="floating-card floating-card-one"><span>01</span><strong>Safer streets</strong></div> -->
-          <!-- <div class="floating-card floating-card-two"><span>02</span><strong>Smarter growth</strong></div> -->
+          <div class="hero-candidate-name" aria-label="Candidate name">JASVIR</div>
         </div>
-
-        <div class="mobile-hero-bottom">
-          <p class="hero-lead">A practical plan for smoother streets, safer neighbourhoods, responsible taxes, better parks and growth that keeps Georgetown feeling like legacy.</p>
-          <h2 class="mobile-candidate-name">Jasvir</h2>
-          <div class="hero-contact" aria-label="Campaign contact information">
-            <a href="tel:+16475299917"><span>Call or text</span><strong>(647) 529-9917</strong></a>
-            <a href="mailto:info@electjasvir.ca"><span>Email</span><strong>info@electjasvir.ca</strong></a>
-          </div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#priorities">See the six priorities</a>
-            <a class="button button-ghost" href="mailto:info@electjasvir.ca?subject=Ward%202%20Community%20Issue">Share a local concern</a>
-          </div>
-        </div>
-      </div>
-      <!-- <a class="scroll-cue" href="#why" aria-label="Scroll to next section"><span></span>Neighbourhood-first leadership</a> -->
+</div>
     </section>
 
-    <section class="intro section" id="why">
-      <div class="container intro-grid">
-        <div class="intro-heading">
-          <p class="section-label">WHY JASVIR</p>
-          <h2>Less noise. More neighbourhood results.</h2>
-        </div>
-        <div class="intro-copy">
+    <section class="section meet" id="why">
+      <div class="container meet-grid">
+        <div class="meet-copy">
+          <p class="section-label">MEET JASVIR</p>
+          <h2>Local priorities. Clear follow-through.</h2>
           <p class="lead">Ward 2 residents should be able to see where their tax dollars go, feel safe walking through local plazas, drive on roads that are properly maintained, and trust that growth is being managed with care.</p>
-          <p>Jasvir’s campaign is built around practical municipal priorities that affect daily life — with clear follow-through, sensible spending and a strong voice for Georgetown at Town Hall.</p>
+          <p>Jasvir’s campaign is built around practical municipal priorities that affect daily life — with sensible spending, straightforward communication and a strong voice for Halton Hills at Town Hall.</p>
         </div>
-      </div>
-
-      <div class="container photo-ribbon-grid" aria-label="Community photo placeholders">
-        <figure class="ribbon-photo ribbon-a"><img src="assets/images/11.jpg" alt="Temporary community campaign photo placeholder"></figure>
-        <figure class="ribbon-photo ribbon-b"><img src="assets/images/12.jpg" alt="Temporary community campaign photo placeholder"></figure>
-        <figure class="ribbon-photo ribbon-c"><img src="assets/images/13.jpg" alt="Temporary community campaign photo placeholder"></figure>
+        <div class="meet-photos" aria-label="Community photo placeholders">
+          <figure><img src="assets/images/11.jpg" alt="Temporary community campaign photo placeholder"></figure>
+          <figure><img src="assets/images/12.jpg" alt="Temporary community campaign photo placeholder"></figure>
+          <figure><img src="assets/images/13.jpg" alt="Temporary community campaign photo placeholder"></figure>
+        </div>
       </div>
     </section>
 
-    <section class="vision section" id="vision">
+    <section class="section vision" id="vision">
       <div class="container vision-grid">
-        <div class="vision-photo-stack" aria-label="Campaign photo collage">
-          <figure class="vision-photo vision-photo-main"><img src="assets/images/8.jpg" alt="Temporary Georgetown community photo placeholder"></figure>
-          <figure class="vision-photo vision-photo-small"><img src="assets/images/14.jpg" alt="Temporary campaign event photo placeholder"></figure>
-          <div class="vision-stamp" aria-hidden="true"><span>WARD 2</span><strong>LOCAL<br>FIRST</strong></div>
-        </div>
-
-        <div class="vision-copy">
+        <div class="vision-heading">
           <p class="section-label">MISSION & VISION</p>
-          <h2>A Georgetown that works better — without losing what makes it special.</h2>
-
-          <article class="statement-card mission-card">
-            <span>Mission</span>
-            <p>Deliver practical, neighbourhood-first leadership that fixes everyday problems — safer streets, smoother roads, responsible spending, cared-for parks and growth that respects Georgetown.</p>
+          <h2>A Halton Hills that works better without losing what makes it special.</h2>
+        </div>
+        <div class="statement-grid">
+          <article class="statement-card">
+            <span>MISSION</span>
+            <p>Deliver practical, neighbourhood-first leadership that fixes everyday problems — safer streets, smoother roads, responsible spending, cared-for parks and growth that respects Halton Hills.</p>
           </article>
-
-          <article class="statement-card vision-card">
-            <span>Vision</span>
-            <p>A safer, better-kept and more affordable Georgetown where families move easily, public spaces thrive, and new development strengthens — rather than overwhelms — our small-town character.</p>
+          <article class="statement-card">
+            <span>VISION</span>
+            <p>A safer, better-kept and more affordable Halton Hills where families move easily, public spaces thrive, and new development strengthens — rather than overwhelms — our small-town character.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="priorities section" id="priorities">
-      <div class="container section-topline">
-        <div>
-          <p class="section-label light">THE WARD 2 PLAN</p>
-          <h2>Six everyday issues.<br>Six clear commitments.</h2>
-        </div>
-        <p>Focused on the things residents notice on the drive to work, the walk to school, the trip to the park and the property tax bill.</p>
+    <section class="section priorities" id="priorities">
+      <div class="container priorities-heading">
+        <p class="section-label">OUR COMMUNITY PRIORITIES</p>
+        <h2>Six everyday issues. Six clear commitments.</h2>
+        <p>Focused on what residents notice on the drive to work, the walk to school, the trip to the park and the property tax bill.</p>
       </div>
 
-      <div class="container priority-bento">
-        <article class="priority-card feature-card roads">
-          <span class="priority-number">01</span>
-          <div class="icon-badge" aria-hidden="true">↗</div>
-          <h3>Roads you can rely on</h3>
-          <p>Fix potholes faster and smooth out neighbourhood streets so everyday drives are safer, easier and less frustrating.</p>
-          <span class="priority-tag">Potholes · resurfacing · maintenance</span>
-        </article>
+      <div class="container priority-overview" aria-label="Ward 2 priority overview">
+        <article><span>01</span><h3>Better Roads</h3><p>Faster pothole repairs and smoother neighbourhood streets.</p></article>
+        <article><span>02</span><h3>Safer Plazas</h3><p>Better lighting, stronger visibility and theft prevention.</p></article>
+        <article><span>03</span><h3>Safer Speeds</h3><p>Traffic calming where children and families need it most.</p></article>
+        <article><span>04</span><h3>Smarter Spending</h3><p>Responsible budgets that respect every property tax dollar.</p></article>
+        <article><span>05</span><h3>Better Parks</h3><p>Cleaner, safer and well-maintained neighbourhood green spaces.</p></article>
+        <article><span>06</span><h3>Thoughtful Growth</h3><p>Development that protects infrastructure and local character.</p></article>
+      </div>
 
-        <article class="priority-card safety">
-          <span class="priority-number">02</span>
-          <div class="icon-badge" aria-hidden="true">✦</div>
-          <h3>Safer local plazas</h3>
-          <p>Push for better lighting and stronger patrol visibility to deter theft and make local commercial areas feel safer.</p>
-          <span class="priority-tag">Lighting · patrols · prevention</span>
+      <div class="container issue-list">
+        <article class="issue-row">
+          <div class="issue-photo"><img src="assets/images/2.jpg" alt="Temporary road and community photo placeholder"></div>
+          <div class="issue-copy"><span class="issue-number">01 · ROADS</span><h3>Roads you can rely on</h3><p>Fix potholes faster and smooth out neighbourhood streets so everyday drives are safer, easier and less frustrating. Jasvir will push for clearer maintenance priorities and timely follow-up when residents report recurring road problems.</p></div>
         </article>
-
-        <article class="priority-card traffic">
-          <span class="priority-number">03</span>
-          <div class="icon-badge" aria-hidden="true">30</div>
-          <h3>Slow down where it matters</h3>
-          <p>Target dangerous speeding in residential streets and school zones with practical traffic-calming and enforcement measures.</p>
-          <span class="priority-tag">Kids · school zones · traffic calming</span>
+        <article class="issue-row reverse">
+          <div class="issue-photo"><img src="assets/images/3.jpg" alt="Temporary local plaza photo placeholder"></div>
+          <div class="issue-copy"><span class="issue-number">02 · COMMUNITY SAFETY</span><h3>Safer local plazas</h3><p>Support better lighting, stronger patrol visibility and practical prevention measures to deter theft and make local commercial areas feel safer. Residents and businesses deserve confidence in the places they visit every day.</p></div>
         </article>
-
-        <article class="priority-card tax">
-          <span class="priority-number">04</span>
-          <div class="icon-badge" aria-hidden="true">$</div>
-          <h3>Respect every tax dollar</h3>
-          <p>Scrutinize spending, focus on essential services and keep affordability at the centre of municipal budget decisions.</p>
-          <span class="priority-tag">Value · accountability · affordability</span>
+        <article class="issue-row">
+          <div class="issue-photo"><img src="assets/images/4.jpg" alt="Temporary neighbourhood street photo placeholder"></div>
+          <div class="issue-copy"><span class="issue-number">03 · ROAD SAFETY</span><h3>Slow down where it matters</h3><p>Target dangerous speeding on residential streets and in school zones with practical traffic-calming, better signage and appropriate enforcement. Safer streets mean parents, children, cyclists and pedestrians can move through their neighbourhoods with greater confidence.</p></div>
         </article>
-
-        <article class="priority-card parks">
-          <span class="priority-number">05</span>
-          <div class="icon-badge" aria-hidden="true">⌁</div>
-          <h3>Parks families are proud of</h3>
-          <p>Upgrade local parks and keep green spaces cleaner, safer and better maintained for children, families and neighbours.</p>
-          <span class="priority-tag">Parks · trails · green spaces</span>
+        <article class="issue-row reverse">
+          <div class="issue-photo"><img src="assets/images/5.jpg" alt="Temporary community photo placeholder"></div>
+          <div class="issue-copy"><span class="issue-number">04 · AFFORDABILITY</span><h3>Respect every tax dollar</h3><p>Scrutinize spending, protect essential services and keep affordability at the centre of municipal budget decisions. Jasvir will advocate for clear priorities, responsible planning and better value for the property taxes residents already pay.</p></div>
         </article>
-
-        <article class="priority-card feature-card growth">
-          <span class="priority-number">06</span>
-          <div class="icon-badge" aria-hidden="true">▦</div>
-          <h3>Growth without losing Georgetown</h3>
-          <p>Manage new development carefully so infrastructure can keep up, overcrowding is reduced and Georgetown’s small-town character is protected.</p>
-          <span class="priority-tag">Infrastructure · density · community character</span>
+        <article class="issue-row">
+          <div class="issue-photo"><img src="assets/images/9.jpg" alt="Temporary park and green space photo placeholder"></div>
+          <div class="issue-copy"><span class="issue-number">05 · PARKS</span><h3>Parks families are proud of</h3><p>Upgrade local parks and keep green spaces cleaner, safer and better maintained for children, families and neighbours. Well-cared-for public spaces strengthen neighbourhoods and give residents more places to gather, play and enjoy Halton Hills.</p></div>
+        </article>
+        <article class="issue-row reverse">
+          <div class="issue-photo"><img src="assets/images/10.jpg" alt="Temporary Halton Hills growth photo placeholder"></div>
+          <div class="issue-copy"><span class="issue-number">06 · GROWTH</span><h3>Growth without losing Halton Hills</h3><p>Manage new development carefully so roads, services and infrastructure can keep up with change. Growth should be thoughtful, reduce unnecessary overcrowding and protect the small-town character that makes Halton Hills a place people are proud to call home.</p></div>
         </article>
       </div>
     </section>
 
-
-
-    <section class="proof section" aria-label="Campaign principles">
+    <section class="section principles">
       <div class="container principle-row">
-        <article><span>Listen</span><p>Start with what residents are actually experiencing.</p></article>
-        <article><span>Prioritize</span><p>Put essential neighbourhood services ahead of distractions.</p></article>
-        <article><span>Deliver</span><p>Track issues, communicate clearly and push for visible follow-through.</p></article>
+        <article><strong>Listen</strong><p>Start with what residents are actually experiencing.</p></article>
+        <article><strong>Prioritize</strong><p>Put essential neighbourhood services ahead of distractions.</p></article>
+        <article><strong>Deliver</strong><p>Communicate clearly and push for visible follow-through.</p></article>
       </div>
     </section>
 
-    <section class="community section">
+    <section class="section community">
       <div class="container community-grid">
+        <div class="community-photo"><img src="assets/images/15.jpg" alt="Temporary community campaign photo placeholder"></div>
         <div class="community-copy">
           <p class="section-label">ROOTED IN COMMUNITY</p>
           <h2>Ward 2 should feel heard between elections, not just during them.</h2>
           <p class="lead">Good local government starts with easy access to your councillor and clear follow-up on neighbourhood concerns.</p>
           <a class="text-link" href="mailto:info@electjasvir.ca?subject=Ward%202%20Neighbourhood%20Feedback">Tell Jasvir what matters on your street <span>→</span></a>
         </div>
-        <div class="community-mosaic">
-          <figure class="mosaic-one"><img src="assets/images/15.jpg" alt="Temporary community campaign photo placeholder"></figure>
-          <figure class="mosaic-two"><img src="assets/images/9.jpg" alt="Temporary Georgetown photo placeholder"></figure>
-          <figure class="mosaic-three"><img src="assets/images/10.jpg" alt="Temporary campaign photo placeholder"></figure>
-        </div>
       </div>
     </section>
 
-
-    <section class="ward-map section" id="ward-map">
-      <div class="container map-layout">
-        <div class="map-copy">
-          <p class="section-label">WARD 2 · GEORGETOWN</p>
-          <h2>Know your ward. Know your voice.</h2>
-          <p class="lead">Use the Ward 2 boundary map to confirm your neighbourhood and see the community Jasvir is running to represent.</p>
-          <!-- <p>This map area is set up as a replaceable campaign asset. Swap in the final Ward 2 map image and PDF later without changing the section layout.</p> -->
-          <div class="map-actions">
-            <a class="button button-primary" href="docs/Ward-2-Map.pdf" target="_blank" rel="noopener">Open Ward 2 PDF</a>
-          </div>
-          <!-- <p class="asset-note"><strong>Easy replacement:</strong> keep the final PDF filename as <code>docs/Ward-2-Map.pdf</code> and replace the map graphic in <code>assets/images/</code>.</p> -->
-        </div>
-        <div class="map-frame pdf-frame">
-          <object data="docs/Ward-2-Map.pdf#view=Fit&toolbar=0&navpanes=0" type="application/pdf" aria-label="Ward 2 boundary PDF">
-            <iframe src="docs/Ward-2-Map.pdf#view=Fit&toolbar=0&navpanes=0" title="Ward 2 boundary PDF"></iframe>
-            <p>Your browser cannot display the PDF here. <a href="docs/Ward-2-Map.pdf" target="_blank" rel="noopener">Open the Ward 2 PDF</a>.</p>
-          </object>
-        </div>
+    <section class="section ward-map" id="ward-map">
+      <div class="container map-copy">
+        <p class="section-label">WARD 2 · HALTON HILLS</p>
+        <h2>Know your ward. Know your voice.</h2>
+        <p class="lead">Use the Ward 2 boundary map to confirm your neighbourhood and see the community Jasvir is running to represent.</p>
+        <a class="button button-secondary" href="docs/Ward-2-Map.pdf" target="_blank" rel="noopener">Open Ward 2 PDF</a>
+      </div>
+      <div class="container map-frame pdf-frame">
+        <object data="docs/Ward-2-Map.pdf#view=Fit&toolbar=0&navpanes=0" type="application/pdf" aria-label="Ward 2 boundary PDF">
+          <iframe src="docs/Ward-2-Map.pdf#view=Fit&toolbar=0&navpanes=0" title="Ward 2 boundary PDF"></iframe>
+          <p>Your browser cannot display the PDF here. <a href="docs/Ward-2-Map.pdf" target="_blank" rel="noopener">Open the Ward 2 PDF</a>.</p>
+        </object>
       </div>
     </section>
 
-    <section class="volunteer section" id="volunteer">
+    <section class="section volunteer" id="volunteer">
       <div class="container volunteer-heading">
-        <div>
-          <p class="section-label light">JOIN TEAM JASVIR</p>
-          <h2>Neighbour by neighbour, we can build a stronger Ward 2.</h2>
-        </div>
-        <p>Whether you have an hour, an afternoon or a few weekends, there is a meaningful way to help. Choose what works for you and the campaign team can follow up directly.</p>
+        <p class="section-label light">JOIN TEAM JASVIR</p>
+        <h2>Neighbour by neighbour, we can build a stronger Ward 2.</h2>
+        <p>Whether you have an hour, an afternoon or a few weekends, there is a meaningful way to help.</p>
       </div>
-
-      <div class="container volunteer-options" aria-label="Volunteer opportunities">
-        <article><span>01</span><h3>Door knocking</h3><p>Meet Ward 2 neighbours and help bring Jasvir’s priorities directly to the community.</p></article>
-        <article><span>02</span><h3>Phone calls</h3><p>Help connect with residents, share campaign information and hear what matters locally.</p></article>
-        <article><span>03</span><h3>Signs & events</h3><p>Support lawn-sign delivery, community events and campaign setup when you are available.</p></article>
-        <article><span>04</span><h3>Election day</h3><p>Join the final push with voter outreach, coordination and other campaign-day support.</p></article>
+      <div class="container volunteer-options">
+        <article><span>01</span><h3>Door knocking</h3><p>Meet neighbours and help bring Jasvir’s priorities directly to the community.</p></article>
+        <article><span>02</span><h3>Phone calls</h3><p>Connect with residents, share campaign information and hear what matters locally.</p></article>
+        <article><span>03</span><h3>Signs & events</h3><p>Support lawn-sign delivery, community events and campaign setup.</p></article>
+        <article><span>04</span><h3>Election day</h3><p>Join the final push with voter outreach and campaign-day support.</p></article>
       </div>
-
       <div class="container volunteer-panel">
         <form class="volunteer-form" data-volunteer-form>
-          <div class="form-intro">
-            <p class="section-label">VOLUNTEER SIGN-UP</p>
-            <h3>Tell us how you would like to help.</h3>
-            <p>Submitting opens your email app with the details addressed to <strong>info@electjasvir.ca</strong>.</p>
-          </div>
+          <p class="section-label">VOLUNTEER SIGN-UP</p>
+          <h3>Tell us how you would like to help.</h3>
+          <p>Submitting opens your email app with the details addressed to <strong>info@electjasvir.ca</strong>.</p>
           <div class="form-grid">
             <label>Full name *<input type="text" name="name" autocomplete="name" required></label>
             <label>Email *<input type="email" name="email" autocomplete="email" required></label>
@@ -280,34 +244,23 @@
           <label>Anything else?<textarea name="message" rows="4" placeholder="Availability, skills, or a quick note..."></textarea></label>
           <button class="button button-primary" type="submit">Join Team Jasvir →</button>
         </form>
-
-        <aside class="volunteer-qr" aria-label="Campaign QR placeholder">
-          <div class="qr-card">
-            <img src="assets/images/qr.jpg" alt="Placeholder QR image to be replaced with Jasvir campaign QR code">
-          </div>
+        <aside class="volunteer-qr">
+          <div class="qr-card"><img src="assets/images/qr.jpg" alt="Placeholder QR image to be replaced with Jasvir campaign QR code"></div>
           <p class="section-label light">CAMPAIGN QR</p>
           <h3>Scan to connect with the campaign.</h3>
-          <!-- <p>Replace <code>assets/images/qr.jpg</code> later with the final QR code. The layout will automatically preserve the correct sizing on desktop and mobile.</p> -->
           <a class="button button-light" href="mailto:info@electjasvir.ca?subject=Volunteer%20for%20Jasvir">Or email to volunteer</a>
         </aside>
       </div>
     </section>
 
-    <section class="connect section" id="connect">
-      <div class="connect-spark spark-left" aria-hidden="true"></div>
-      <div class="connect-spark spark-right" aria-hidden="true"></div>
+    <section class="section connect" id="connect">
       <div class="container connect-inner">
-        <p class="section-label light">JOIN THE CONVERSATION</p>
+        <p class="section-label">LET'S CONNECT</p>
         <h2>What would you fix first in Ward 2?</h2>
-        <p>Share a street concern, ask a campaign question, volunteer, or simply introduce yourself. Jasvir’s campaign wants to hear directly from Georgetown residents.</p>
+        <p>Share a street concern, ask a campaign question, volunteer, or simply introduce yourself.</p>
         <div class="connect-actions">
-          <a class="button button-light" href="tel:+16475299917">Call (647) 529-9917</a>
-          <a class="button button-outline-light" href="mailto:info@electjasvir.ca">Email Jasvir</a>
-        </div>
-        <div class="contact-panel">
-          <a href="mailto:info@electjasvir.ca?subject=I%20want%20to%20volunteer%20for%20Jasvir"><span>Volunteer</span><strong>Help the campaign →</strong></a>
-          <a href="mailto:info@electjasvir.ca?subject=Ward%202%20Lawn%20Sign"><span>Lawn sign</span><strong>Request a sign →</strong></a>
-          <a href="mailto:info@electjasvir.ca?subject=Ward%202%20Community%20Issue"><span>Neighbourhood issue</span><strong>Send it in →</strong></a>
+          <a class="button button-primary" href="tel:+16475299917">Call (647) 529-9917</a>
+          <a class="button button-secondary" href="mailto:info@electjasvir.ca">Email Jasvir</a>
         </div>
       </div>
     </section>
@@ -315,31 +268,11 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#top" aria-label="Back to top">
-          <span class="brand-bloom" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="brand-copy"><strong>JASVIR</strong><small>WARD 2 · GEORGETOWN</small></span>
-        </a>
-        <p>Practical neighbourhood leadership for Georgetown.</p>
-      </div>
-      <nav aria-label="Footer navigation">
-        <a href="#why">Why Jasvir</a>
-        <a href="#priorities">Priorities</a>
-        <a href="#vision">Mission & Vision</a>
-        <a href="#ward-map">Ward Map</a>
-        <a href="#volunteer">Volunteer</a>
-        <a href="#connect">Connect</a>
-      </nav>
-      <div class="footer-contact">
-        <a href="tel:+16475299917">(647) 529-9917</a>
-        <a href="mailto:info@electjasvir.ca">info@electjasvir.ca</a>
-        <span>Georgetown, Halton Hills, Ontario</span>
-      </div>
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark">J</span><span class="brand-copy"><strong>JASVIR</strong><small>WARD 2 · HALTON HILLS</small></span></a><p>Practical neighbourhood leadership for Halton Hills.</p></div>
+      <nav aria-label="Footer navigation"><a href="#why">Meet Jasvir</a><a href="#priorities">Priorities</a><a href="#vision">Mission & Vision</a><a href="#ward-map">Ward Map</a><a href="#volunteer">Volunteer</a></nav>
+      <div class="footer-contact"><a href="tel:+16475299917">(647) 529-9917</a><a href="mailto:info@electjasvir.ca">info@electjasvir.ca</a><span>Halton Hills, Ontario</span></div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span data-year></span> Jasvir for Ward 2.</span>
-      <span>Campaign website · Georgetown</span>
-    </div>
+    <div class="container footer-bottom"><span>© <span data-year></span> Jasvir for Ward 2.</span><span>Campaign website · Halton Hills</span></div>
   </footer>
 
   <script src="assets/main.js"></script>
