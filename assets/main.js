@@ -58,5 +58,55 @@
     });
   }
 
+  // Fast, subtle reveal as content enters the viewport on phones.
+  const setupMobileReveals = () => {
+    if (!window.matchMedia('(max-width: 680px)').matches) return;
+
+    const selectors = [
+      '.meet-copy',
+      '.meet-photos figure',
+      '.vision-heading',
+      '.statement-card',
+      '.priorities-heading',
+      '.priority-overview article',
+      '.issue-row',
+      '.principle-row article',
+      '.community-photo',
+      '.community-copy',
+      '.map-copy',
+      '.map-frame',
+      '.volunteer-heading',
+      '.volunteer-options article',
+      '.volunteer-form',
+      '.volunteer-qr',
+      '.connect-inner'
+    ];
+
+    const items = [...document.querySelectorAll(selectors.join(','))];
+    items.forEach((item, index) => {
+      item.classList.add('reveal-on-scroll');
+      const siblingIndex = [...(item.parentElement?.children || [])].indexOf(item);
+      if (siblingIndex === 1) item.classList.add('reveal-delay-1');
+      if (siblingIndex >= 2) item.classList.add('reveal-delay-2');
+    });
+
+    if (!('IntersectionObserver' in window)) {
+      items.forEach((item) => item.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -3% 0px' });
+
+    items.forEach((item) => observer.observe(item));
+  };
+
+  setupMobileReveals();
+
   if (year) year.textContent = new Date().getFullYear();
 })();
