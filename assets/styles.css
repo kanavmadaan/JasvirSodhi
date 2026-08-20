@@ -1564,3 +1564,81 @@ p {
     transition-delay: 0ms !important;
   }
 }
+
+
+/* FINAL mobile Meet Jasvir mosaic correction:
+   explicit placement prevents an empty implicit row/gap after 16.jpg */
+@media (max-width: 760px) {
+  .meet-photos {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: auto auto auto !important;
+    grid-auto-rows: auto !important;
+    align-items: stretch !important;
+    align-content: start !important;
+    gap: 8px !important;
+    margin: 12px 0 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .meet-photos figure,
+  .meet-photos figure:nth-child(1),
+  .meet-photos figure:nth-child(2),
+  .meet-photos figure:nth-child(3),
+  .meet-photos figure:nth-child(4),
+  .meet-photos figure:nth-child(5) {
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    grid-row: auto !important;
+    transform-origin: center !important;
+  }
+
+  /* 16.jpg: full-width first row */
+  .meet-photos figure:nth-child(1) {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+    aspect-ratio: 16 / 10 !important;
+  }
+
+  /* Remaining four: immediately beneath in a tight 2x2 */
+  .meet-photos figure:nth-child(2) {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+  .meet-photos figure:nth-child(3) {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+  .meet-photos figure:nth-child(4) {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+  .meet-photos figure:nth-child(5) {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+
+  .meet-photos figure img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* Reveal each image without layout-affecting stagger */
+  .meet-photos figure.reveal-on-scroll {
+    margin: 0 !important;
+    transition-delay: 0ms !important;
+  }
+}
