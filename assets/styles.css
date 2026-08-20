@@ -1534,3 +1534,33 @@ p {
     display: block !important;
   }
 }
+
+/* v13 mobile refinement: keep the five Meet Jasvir photos as one cohesive mosaic */
+@media (max-width: 760px) {
+  .meet-photos {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    gap: 8px !important;
+    row-gap: 8px !important;
+    column-gap: 8px !important;
+    margin-top: 1rem !important;
+    padding: 0 !important;
+  }
+
+  .meet-photos figure {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .meet-photos figure:first-child {
+    grid-column: 1 / -1 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Do not let staggered reveal delays make the photo group feel separated */
+  .meet-photos figure.reveal-delay-1,
+  .meet-photos figure.reveal-delay-2 {
+    transition-delay: 0ms !important;
+  }
+}
