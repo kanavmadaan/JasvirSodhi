@@ -58,9 +58,8 @@
     });
   }
 
-  // Fast, subtle reveal as content enters the viewport on phones.
-  const setupMobileReveals = () => {
-    if (!window.matchMedia('(max-width: 680px)').matches) return;
+  // Fast, subtle reveal as content enters the viewport on all screen sizes.
+  const setupScrollReveals = () => {
 
     const selectors = [
       '.meet-copy',
@@ -106,7 +105,7 @@
     items.forEach((item) => observer.observe(item));
   };
 
-  setupMobileReveals();
+  setupScrollReveals();
 
   if (year) year.textContent = new Date().getFullYear();
 })();

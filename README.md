@@ -1,6 +1,6 @@
-# Jasvir for Ward 2 — Georgetown Campaign Website
+# Jasvir for Ward 2 — Halton Hills Campaign Website
 
-A new single-page, mobile-first campaign website built for Jasvir's Ward 2 city councillor campaign in Georgetown.
+A new single-page, mobile-first campaign website built for Jasvir's Ward 2 city councillor campaign in Halton Hills.
 
 ## Files
 - `index.html` — complete campaign page
