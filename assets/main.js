@@ -78,7 +78,7 @@
       '.volunteer-options article',
       '.volunteer-form',
       '.volunteer-qr',
-      '.connect-inner'
+      '.connect-inner', '.journey-hero-copy', '.journey-hero-photo', '.journey-copy', '.journey-quote', '.journey-heading', '.education-card', '.service-work', '.leadership-card', '.belief-inner', '.future-priorities', '.journey-cta-inner'
     ];
 
     const items = [...document.querySelectorAll(selectors.join(','))];

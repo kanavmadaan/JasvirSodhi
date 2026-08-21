@@ -1238,13 +1238,13 @@ p {
 }
 
 .hero-candidate-name {
-  margin-top: 14px;
+  margin-top: 34px;
   color: var(--teal);
   font-size: clamp(3rem, 5.5vw, 5.75rem);
   font-weight: 900;
   line-height: .88;
   letter-spacing: -.055em;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 @media(max-width:980px) {
@@ -1640,5 +1640,145 @@ p {
   .meet-photos figure.reveal-on-scroll {
     margin: 0 !important;
     transition-delay: 0ms !important;
+  }
+}
+
+/* Jasvir's Journey */
+.site-nav a.active{color:var(--plum,#5d2246);font-weight:800}
+.journey-hero{padding:clamp(3rem,6vw,5.5rem) 0 3.5rem;background:linear-gradient(180deg,#fff 0%,#fbf7fa 100%)}
+.journey-hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.journey-hero-copy h1{max-width:760px;margin:.5rem 0 1.2rem}
+.journey-hero-photo{margin:0;overflow:hidden;border-radius:30px;aspect-ratio:4/5}
+.journey-hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.journey-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:1.6rem}
+.journey-stats div{border-top:3px solid var(--plum,#5d2246);padding-top:.75rem}
+.journey-stats strong{display:block;font-size:clamp(1.8rem,3vw,2.6rem);color:var(--plum,#5d2246);line-height:1}
+.journey-stats span{display:block;margin-top:.3rem;font-size:.82rem;line-height:1.35}
+.journey-section{padding:clamp(3rem,6vw,5rem) 0}
+.journey-soft{background:#fbf7fa}
+.journey-two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.journey-copy h2,.journey-heading h2{margin:.4rem 0 1rem}
+.journey-copy p+p{margin-top:1rem}
+.journey-heading{max-width:800px;margin-bottom:2rem}
+.journey-quote{background:var(--plum,#5d2246);color:#fff;padding:clamp(1.8rem,4vw,3.2rem);border-radius:28px}
+.journey-quote span{font-size:.78rem;letter-spacing:.14em;font-weight:800;opacity:.75}
+.journey-quote blockquote{margin:1rem 0;font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.12;font-weight:800}
+.education-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.education-card{border:1px solid rgba(93,34,70,.13);border-radius:22px;padding:1.4rem;background:#fff}
+.education-card>span{color:var(--plum,#5d2246);font-weight:900;font-size:.78rem;letter-spacing:.12em}
+.education-card h3{margin:.7rem 0 .55rem}
+.service-work-list{display:grid;gap:1rem}
+.service-work{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center;padding:1rem 0 2rem;border-bottom:1px solid rgba(93,34,70,.12)}
+.service-work.reverse{grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr)}
+.service-work.reverse figure{order:2}.service-work.reverse>div{order:1}
+.service-work figure{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:16/10;max-width:520px}
+.service-work figure img{width:100%;height:100%;object-fit:cover;display:block}
+.service-work span{color:var(--plum,#5d2246);font-weight:900;font-size:.76rem;letter-spacing:.12em}
+.service-work h3{margin:.45rem 0 .65rem;font-size:clamp(1.5rem,2.4vw,2.15rem)}
+.leadership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.leadership-card{min-height:130px;border:1px solid rgba(93,34,70,.13);background:#fff;border-radius:20px;padding:1.2rem;display:flex;flex-direction:column;justify-content:space-between}
+.leadership-card span{color:var(--plum,#5d2246);font-weight:700;font-size:.82rem;margin-top:.6rem}
+.journey-belief{background:var(--plum,#5d2246);color:#fff;padding:clamp(3rem,6vw,5rem) 0}
+.belief-inner{max-width:900px}
+.belief-inner blockquote{margin:.8rem 0 1.2rem;font-size:clamp(2rem,4.5vw,3.7rem);line-height:1.08;font-weight:850}
+.belief-inner p:last-child{max-width:740px;opacity:.88}
+.future-priorities{border-left:4px solid var(--plum,#5d2246);padding-left:1.5rem}
+.future-priorities ul{margin:1rem 0 0;padding-left:1.15rem;display:grid;gap:.65rem}
+.journey-cta{padding:clamp(3rem,6vw,5rem) 0;background:var(--plum,#5d2246);color:#fff}
+.journey-cta-inner{text-align:center;max-width:850px}
+.journey-cta-inner h2{color:#fff;margin:.5rem 0 .7rem}
+.journey-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+.button-light{background:#fff;color:var(--plum,#5d2246)}
+.button-outline-light{border:1px solid rgba(255,255,255,.65);color:#fff}
+@media(max-width:900px){
+ .journey-hero-grid,.journey-two-col{grid-template-columns:1fr}
+ .journey-hero-photo{max-width:560px;aspect-ratio:4/3}
+ .education-grid{grid-template-columns:1fr 1fr}
+ .leadership-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+ .journey-hero{padding:2rem 0 2.5rem}
+ .journey-hero-photo{order:-1;border-radius:24px;aspect-ratio:4/3}
+ .journey-stats{gap:.45rem}
+ .journey-stats strong{font-size:1.65rem}
+ .journey-stats span{font-size:.7rem}
+ .journey-section{padding:2.5rem 0}
+ .education-grid,.leadership-grid{grid-template-columns:1fr}
+ .service-work,.service-work.reverse{grid-template-columns:1fr;gap:1rem;padding-bottom:1.6rem}
+ .service-work.reverse figure,.service-work.reverse>div{order:initial}
+ .service-work figure{width:100%;max-width:none;aspect-ratio:16/10}
+ .journey-quote{padding:1.5rem;border-radius:22px}
+ .belief-inner blockquote{font-size:2rem}
+}
+
+/* v15 final: truly equal mobile spacing around candidate name.
+   The lower gap was being compounded by the hero layout gap + paragraph margin. */
+@media (max-width: 760px) {
+  .hero-grid,
+  .hero-inner {
+    row-gap: 0 !important;
+  }
+
+  .hero-visual {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hero-candidate-name {
+    display: block !important;
+    width: 100% !important;
+    margin: 12px 0 0 !important;   /* photo -> name */
+    padding: 0 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+  }
+
+  .hero-copy {
+    margin: 12px 0 0 !important;   /* name -> copy */
+    padding-top: 0 !important;
+  }
+
+  .hero-copy .hero-lede,
+  .hero-copy .lede,
+  .hero-copy > p:first-child,
+  .hero-copy > p:not(.eyebrow) {
+    margin-top: 0 !important;
+  }
+}
+
+/* v16: make Jasvir's Journey hero portrait match homepage hero presentation */
+.journey-hero-photo {
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+  max-width: none !important;
+}
+
+.journey-hero-photo img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  display: block !important;
+  border-radius: 28px !important;
+}
+
+@media (max-width: 900px) {
+  .journey-hero-photo {
+    aspect-ratio: auto !important;
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .journey-hero-photo {
+    aspect-ratio: auto !important;
+    border-radius: 0 !important;
+  }
+
+  .journey-hero-photo img {
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 24px !important;
   }
 }
